@@ -7,6 +7,10 @@ stage 'Clean'
 stage 'a'
 sh "echo 'hello stage a'"
 
-apply from: 'https://github.com/chaunal/test/Jenkinsparam'
 
+def constants
+
+stage('Import dependencies')
+  git(url: 'https://github.com/chuanal/test', chaunal: '13004mbt')
+    constants = load('constants.groovy')
 }
