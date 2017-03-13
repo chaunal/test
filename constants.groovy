@@ -1,3 +1,1 @@
-class Globals {
-   static String ouch = "I'm global.."
-}
+def something = 'foobar'
