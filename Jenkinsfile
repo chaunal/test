@@ -11,7 +11,7 @@ sh "echo 'hello stage a'"
 def constants
 
 stage('Import dependencies')
-  git(url: 'https://github.com/chuanal/test', chaunal: '19d257e9-5c61-4f50-a8fa-8d27ea76180a')
+  git(url: 'https://github.com/chuanal/test', credentialsId: '19d257e9-5c61-4f50-a8fa-8d27ea76180a')
     prop=load('test.properties')
 print "hello"	
 }
