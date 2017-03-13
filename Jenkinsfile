@@ -12,9 +12,10 @@ def constants
 
 stage('Import dependencies')
    git(url: 'https://github.com/chaunal/test', credentialsId: '19d257e9-5c61-4f50-a8fa-8d27ea76180a')
-  constants = load('test.properties')
-    
-    println constants.getProperty(a)
+    Properties props = new Properties()
+	constants = load('test.properties')
+	props.load(constants.newDataInputStream())
+	println props.getProperty('a')
 }
 
 
