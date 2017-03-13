@@ -1,5 +1,3 @@
-
-@Immutable
 class Coordinates {
     String  a = "amit"
     String   b = "sumit"
