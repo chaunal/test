@@ -1,12 +1,3 @@
-class Coordinates {
-    String  a = "amit"
-    String   b = "sumit"
-
-    String  getA(int idx) {
-        a
-    }
-	
-	String  getb(int idx) {
-        b
-    }
+class Globals {
+   static String ouch = "I'm global.."
 }
