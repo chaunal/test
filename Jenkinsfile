@@ -1,5 +1,3 @@
-import java.util.*
-
 node
 {
 stage 'Clean'
